@@ -6,19 +6,41 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Cyan99&#39;s Blog</title>
+  <title>Learning Scheduling Algorithms for Data Processing Clusters翻译 | Cyan99&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="摘要高效地调度分布式计算集群上的数据处理任务需要复杂的算法。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2020/10/06/hello-world/index.html">
+<meta property="og:title" content="Learning Scheduling Algorithms for Data Processing Clusters翻译">
+<meta property="og:url" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/index.html">
 <meta property="og:site_name" content="Cyan99&#39;s Blog">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="摘要高效地调度分布式计算集群上的数据处理任务需要复杂的算法。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-10-06T08:39:40.344Z">
-<meta property="article:modified_time" content="2020-10-06T08:39:40.344Z">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/1.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/2.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/5.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/6.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/222.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/7.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/3.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/8.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/4.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/16.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/17.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/10.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/11.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/12.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/13.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/444.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/14.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9%201.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/333.png">
+<meta property="og:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/15.png">
+<meta property="article:published_time" content="2021-03-11T09:18:00.000Z">
+<meta property="article:modified_time" content="2021-03-11T09:19:12.548Z">
 <meta property="article:author" content="Cyan99">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/1.png">
   
     <link rel="alternative" href="/atom.xml" title="Cyan99&#39;s Blog" type="application/atom+xml">
   
@@ -154,39 +176,279 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Learning Scheduling Algorithms for Data Processing 34426c5f1a7e451393665f506b7178a7" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      Learning Scheduling Algorithms for Data Processing Clusters翻译
     </h1>
   
 
         
-        <a href="/2020/10/06/hello-world/" class="archive-article-date">
-  	<time datetime="2020-10-06T08:39:40.344Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-06</time>
+        <a href="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/" class="archive-article-date">
+  	<time datetime="2021-03-11T09:18:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-11</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+        <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>高效地调度分布式计算集群上的数据处理任务需要复杂的算法。</p>
+<a id="more"></a>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>目前的系统使用简单的、广义的启发式方法，忽略了工作负载的特征，因为为每个工作负载开发和调整调度策略是不可行的。在本文中，我们证明了现代机器学习技术可以自动生成高效的策略。<br>Decima使用强化学习(RL)和神经网络来学习特定于工作负载的调度算法，而不需要任何人工指导，除了一个高层次的目标，如最小化平均作业完成时间。然而，现成的RL技术无法处理调度问题的复杂性和规模。为了构建Decima，我们必须为作业的依赖图开发新的表示方式，设计可扩展的RL模型，并发明RL训练方法来处理连续的随机工作到来。</p>
+<p>我们在25节点集群上与Spark集成的原型表明，与手工调优调度启发式相比，Decima将平均作业完成时间提高了至少21%，在高集群负载期间达到2×。</p>
+<p>CCS概念：软件及其工程→调度；网络→网络资源分配；计算方法→强化学习</p>
+<h1 id="一、介绍"><a href="#一、介绍" class="headerlink" title="一、介绍"></a>一、介绍</h1><p>对企业来说，昂贵的计算集群的有效利用至关重要：即使在利用率上的微小改进也可以在规模上节省数百万美元。集群调度器是实现这些节省的关键。</p>
+<p>一个好的调度策略包可以紧密地减少碎片，根据高级指标（如用户感知延迟）来确定作业的优先级，并避免低效的配置。</p>
+<p>当前的集群调度器依赖于启发式方法，这些启发式方法优先考虑通用性、易于理解和直接实现，而不是在特定工作负载上实现理想的性能。通过使用一般启发式算法，如公平调度，最短作业优先和简单的装箱策略，目前的系统放弃了潜在的性能优化。例如，广泛使用的调度程序会忽略关于作业结构（即内部依赖关系）和作业输入大小的高效并行性的可用信息。不幸的是，使用这些信息的特定于工作负载的调度策略需要专家知识和大量的工作来设计、实现和验证。对于许多组织来说，这些技能要么是不可获得的，要么是不经济的，因为劳动力成本超过了潜在的节省。</p>
+<p>在本文中，我们展示了现代机器学习技术可以通过自动学习高效的、特定于工作负载的调度策略来帮助避免这种权衡。我们提出了一种适用于有依赖阶段的数据处理作业的通用调度服务——Decima。许多系统将作业阶段及其相关性编码为有向无环图(DAG)[10,19,42,80]。高效调度DAG会导致难以解决的算法问题，其最优解是棘手的[36]。只要给出一个高级目标（例如，最小化平均作业完成时间），Decima就会使用现有的监控信息和过去的工作负载日志自动学习复杂的调度策略。例如，与严格的公平共享政策不同，Decima学会了给工作分配不同份额的资源，以优化整体性能，它还学会了特定于工作的并行级别，避免在没有内在并行性的工作的收益递减上浪费资源。这些策略的正确算法和阈值依赖于工作负载，今天要实现它们需要手动调度器定制。</p>
+<p>Decima使用现代强化学习(RL)技术通过经验学习调度策略。</p>
+<p>RL非常适合于学习调度策略，因为它允许从实际工作负载和操作条件中学习，而不依赖于不准确的假设。<br>Decima将其调度策略编码在一个经过大量模拟实验训练的神经网络中，在这个神经网络中，它对工作量进行调度，观察结果，并逐步改进其调度策略。</p>
+<p>然而，Decima的贡献不仅仅是将现成的RL算法应用于调度：为了成功学习高质量的调度策略，我们必须开发新的数据和调度动作表示形式，以及新的RL训练技术。</p>
+<p>首先，集群调度器必须扩展到数百个作业和数千台机器，并且必须在每个作业可能有数百种配置之间做出决定。这导致了与传统的RL应用程序（例如，玩游戏[61,70]，机器人控制[51,67]）相比，有更大的问题规模：无论是在调度程序可用的信息量(状态空间)，还是必须考虑的可能选择的数量(动作空间)。</p>
+<p>我们设计了一个可伸缩的神经网络结构，它结合了一个图形神经网络来处理作业和集群信息，以及一个策略网络来做出调度决策，而无需人工特征工程。</p>
+<p>我们的神经网络重新使用一组小的构建块操作来处理作业DAG，不管它们的大小和形状，并且不管作业或机器的数量，做出调度决策。</p>
+<p>这些操作是在训练过程中学习到的参数化函数，并设计用于调度领域。例如，确保图神经网络可以表达属性，如DAG的关键路径。</p>
+<p>与调度问题的朴素编码相比，我们的神经网络设计大大降低了模型的复杂性，这是高效学习、快速训练和低延迟调度决策的关键。</p>
+<p>其次，传统的RL算法不能训练具有连续流工作到达的模型。工作到达的随机性使得RL算法无法判断两个决策的观察结果是由于不同的工作到达模式不同，还是由于策略决策的质量不同。</p>
+<p>此外，RL政策必然会在训练的早期阶段做出糟糕的决定。因此，随着源源不断涌入的工作，该政策不可避免地积累了大量工作，而这些工作永远无法恢复。花费大量的训练时间探索在这种情况下的行动并不能改善政策。</p>
+<p>为了解决后一种问题，我们在一开始就终止训练epsiode，并逐渐增加epsiode的长度。这允许策略首先学习处理简单、短的工作序列，然后逐步学习更有挑战性的到达序列。</p>
+<p>为了应对工作抵达的随机性，我们使用了一种最新的RL技术，在具有随机输入的环境中，根据实际经历的工作抵达顺序来调整训练反馈。这分离了调度策略在反馈中的贡献，并使学习处理随机工作到达的策略成为可行的。</p>
+<p>我们将Decima与Spark集成在一起，并在实验试验台和阿里巴巴生产集群的工作量跟踪上对其进行评估[6,52]。评估表明，</p>
+<p>Decima在25个节点的Spark集群上优于现有的启发式算法，将TPC-H查询混合的平均作业完成时间减少了至少21%。</p>
+<p>在集群负载较高的时期，Decima的策略尤其有效，与现有的启发式方法相比，它最多可将作业完成时间提高2倍。</p>
+<p>Decima还扩展到CPU和内存的多资源调度，与Graphene[36]等先前的方案相比，它将平均作业完成时间提高了32-43%。</p>
+<p>综上所述，我们做出了以下主要贡献：</p>
+<p>(1)可扩展的神经网络设计，可以处理任意形状和大小的DAG，调度DAG阶段，并为每个任务设置有效的并行级别(§5.1 -§5.2)。</p>
+<p>(2)一套RL训练技术，首次使训练调度程序处理无界随机工作到达序列(§5.3)。</p>
+<p>(3) Decima，第一个基于RL的调度器，可以调度复杂的数据处理工作，并在没有人工输入的情况下学习特定工作负载的调度策略，以及它的原型实现(§6)。</p>
+<p>(4)在模拟和真实Spark集群中评估Decima算法，并与最先进的调度启发式算法进行比较</p>
+<h1 id="二、动机"><a href="#二、动机" class="headerlink" title="二、动机"></a>二、动机</h1><p>数据处理系统和查询编译器，如Hive、Pig、SparkSQL和DryadLINQ createdag结构的作业，它们由输入/输出依赖项连接的处理阶段组成（图1）</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/1.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/1.png"></p>
+<p>数据并行作业具有复杂的数据流图，如图所示(Spark中的TPC-H查询)，每个节点具有不同的任务数量、任务持续时间和输入/输出大小。</p>
+<p>对于重复作业（在生产集群中很常见），可以合理估计运行时间和中间数据大小。然而，大多数的集群调度器在他们的决策中忽略了这个作业结构，而是依赖于，例如，粗粒度的公平共享，严格的优先级，以及手动指定每个作业的并行性。现有的调度器由于很难设计出利用它的调度算法，所以大多选择忽略这种丰富的、容易获得的作业结构信息。我们用两个具体的例子来说明在调度决策中使用特定作业信息的挑战：(i) 依赖感知调度 (ii) 自动选择合适的并行任务数量。</p>
+<h2 id="2-1依赖感知任务调度"><a href="#2-1依赖感知任务调度" class="headerlink" title="2.1依赖感知任务调度"></a>2.1依赖感知任务调度</h2><p>在实践中，许多任务的DAG在一个复杂的依赖结构中有数十个或数百个不同持续时间和并行任务数量的阶段。理想的计划确保独立的阶段尽可能并行地运行，并且如果有可用的资源，任何阶段都不会阻塞依赖项。确保这一点需要调度器理解依赖结构并提前计划。这个“DAG调度问题”在算法上是困难的：例如，参见Grandl等人[36，§2.2]的说明性例子和我们在附录A中详细描述的例子。</p>
+<p>理论研究[18,20,48,69]主要集中在问题的简单实例上，这些实例不能反映真实数据处理集群的复杂性（例如，在线作业的到达、多个DAG、每个阶段有多个任务、具有不同内在并行性的作业、在机器之间移动作业的开销等）。例如，在最近的一篇论文中，Agrawal et al.[5]证明了两种简单的DAG调度策略（最短作业优先和延迟到达处理器共享）在每个作业阶段有一个任务的基本模型中具有恒定的竞争比。正如我们的结果显示(§2.3，§7)，这些策略在真正的Spark集群中远远不是最优的。</p>
+<p>因此，设计一种算法来为所有可能的DAG组合生成最优调度是很难的[36,57]。现有的调度器忽略了这一挑战：它们会在某个阶段可用时将任务放入队列，或者以任意顺序运行阶段。</p>
+<h2 id="2-2-设置正确的并行级别"><a href="#2-2-设置正确的并行级别" class="headerlink" title="2.2 设置正确的并行级别"></a>2.2 设置正确的并行级别</h2><p>除了了解依赖关系之外，理想的调度器还必须了解如何在作业之间最好地分配有限的资源。作业在其处理的数据量和可用的并行工作量上有所不同。具有大量输入或中间数据的作业可以有效地利用额外的并行性；相比之下，运行在少量输入数据上的作业，或者运行并行操作效率较低的作业，其收益会随着并行度的降低而下降。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/2.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/2.png"></p>
+<p>TPC-H查询的并行度不同：在100GB的输入上，Q9可以加速到40个并行任务，而Q2在20个任务时就停止加速；Q9上的2GB输入只需要5个任务。在这些曲线上为混合工作负载选择“最佳点”是困难的。</p>
+<p>图2用运行在Spark上的两个TPC-H[73]查询的作业运行时说明了这一点，因为它们被赋予了额外的资源来运行更多的并行任务。即使处理100GB的输入，Q2和Q9也表现出不同的可伸缩性：Q9可以显著加速到40个并行任务，而Q2只能获得超过20个任务的边际收益。然而，当Q9运行在更小的2 GB输入上时，它需要的并行任务不超过10个。</p>
+<p>对于所有的工作，在曲线的“最佳点”之外分配额外的并行任务只会增加递减的收益。因此，调度器应该推断哪个作业将从额外资源中获得最大的边际收益，并相应地为每个作业选择最佳位置。</p>
+<p>现有的调度程序在很大程度上回避了这个问题。大多数都让用户在选择多少并行任务时感到负担[68，§5]，或者依赖于基于粗糙启发式的单独的“自动缩放”组件[9,28]。事实上，许多公平的调度程序[311,43]在分配资源时并不关注决策的效率，有时，“不公平”的调度会导致更有效的整体执行。</p>
+<h2 id="2-3一个关于Spark的说明性例子"><a href="#2-3一个关于Spark的说明性例子" class="headerlink" title="2.3一个关于Spark的说明性例子"></a>2.3一个关于Spark的说明性例子</h2><p>所描述的方面只是调度器如何利用工作负载知识的两个示例。为了获得最好的性能，调度器还必须考虑其他因素，比如执行顺序（例如，偏向短期作业）和避免资源碎片化[34,77]。把所有这些维度放在一起考虑——就像Decima所做的那样——会产生实质性的不同。</p>
+<p>我们通过在一个有50个并行任务槽的Spark集群上运行十个随机选择的TPC-H[73]查询，这些查询的输入大小来自长尾分布。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/5.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/5.png"></p>
+<p>与Spark的FIFO调度程序相比，Decima将10个随机TPC-H查询的平均JCT提高了45%，在有50个任务槽(executor)的集群上，与fair调度程序相比，它提高了19%。不同颜色的查询：垂直的红线是工作完成情况；紫色意味着闲置</p>
+<p>图3显示了一些时间表（a）Spark默认的FIFO调度 (b)短期工作优先政策，严格优先短期工作；(c)更现实、更公平的调度程序，动态地在作业之间划分任务槽；(d)由Decima学习的调度策略。我们测量十项工作的平均完成时间(JCT)。</p>
+<p>访问图结构有助于Decima比单纯的FIFO调度器平均提高45%，比fair调度器提高19%。</p>
+<p>它通过快速完成短任务来实现这种加速，因为在前40秒内完成了5个任务；通过最大化并行处理效率。</p>
+<p>SJF将所有的任务槽都用于次小的任务，以便提前完成(但效率不高)；相比之下，Decima运行的工作接近并行的最佳状态。通过控制并行性，Decima相较于SJF，减少了30%完成所有工作的时间。长远来讲，不像fair调度，Decima在作业之间对任务槽进行非均匀分区，JCT提高了19%。</p>
+<p>设计通用启发式来实现这些好处是困难的，因为每一个额外的维度(DAG结构、并行性、作业规模等)都增加了复杂性并引入了新的边缘情况。</p>
+<p>Decima提供了一个新的选择使用数据驱动技术，它自动学习特定于工作负载的策略，从而获得这些好处。Decima这样做不需要高级目标以外的人为指导(例如，最小平均JCT)，也不需要明确地对系统或工作负载建模。</p>
+<h1 id="三、Spark中的DAG调度问题"><a href="#三、Spark中的DAG调度问题" class="headerlink" title="三、Spark中的DAG调度问题"></a>三、Spark中的DAG调度问题</h1><p>Decima是学习DAG结构作业调度算法的一般框架。具体来说，我们描述了它在Spark系统的背景下的设计。</p>
+<p>一个Spark作业由一个DAG组成，DAG的节点是作业的执行阶段。每个阶段代表一个操作，系统在该阶段的输入数据的多个分片上并行运行。输入是一个或多个父阶段的输出，每个分片由一个单任务处理。一旦所有父阶段完成，阶段的任务就变为可运行的。有多少任务可以并行运行取决于作业持有的executor的数量。通常，一个阶段的任务比executor多，因此任务以几个“波”运行。executor是由Spark master根据用户请求分配的，默认情况下，executor会一直执行到作业完成。但是，Spark也支持根据等待任务[9]的等待时间来动态分配executor，尽管在作业之间移动executor会带来一些开销(比如关闭和启动JVM)。</p>
+<p>因此，Spark必须处理三种调度决策：(i)决定每个任务需要分配多少executor；(ii)决定每个作业接下来要运行哪个阶段的任务，(iii)当一个executor空闲时，决定接下来要运行哪个任务。当一个阶段完成时，它的作业的DAG调度器将处理相关子阶段的激活，并将它们的任务与一个低级任务调度器排列在队列中。任务调度器维护任务队列，每当executor空闲时，它就从中分配任务。</p>
+<p>我们允许调度器根据需要在作业DAG之间移动executor(动态分配)。Decima主要关注DAG调度(即下一个阶段运行)和executor分配（即每个作业的并行度。由于一个阶段中的任务运行相同的代码并请求相同的资源，所以我们使用Spark现有的任务级调度。</p>
+<h1 id="四、概述和设计挑战"><a href="#四、概述和设计挑战" class="headerlink" title="四、概述和设计挑战"></a>四、概述和设计挑战</h1><p>Decima将调度器表示为使用神经网络做出决策的agent，此后称为策略网络。</p>
+<p>在调度事件时</p>
+<p>例如，一个阶段完成(释放executor)，或者一个作业到达（添加DAG）</p>
+<p>agent将集群的当前状态作为输入，并输出一个调度action。</p>
+<p>在高层上，state捕获调度程序队列和executor中的DAG状态，而action则决定executor在任何给定时间执行的DAG阶段。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/6.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/6.png"></p>
+<p>在Decima的RL框架中，agent通过观察集群状态来决定集群环境中的调度操作，并根据高层目标获得奖励。agent使用图神经网络将作业dag转化为策略网络的向量，并输出动作</p>
+<p>通过大量的离线(模拟)实验，Decima使用RL对其神经网络进行训练。在这些实验中，Decima尝试安排工作负载，观察结果，并在每次行动后为agent提供奖励。奖励是根据Decima的高级调度目标设定的（例如 最小化平均JCT）。RL算法利用该奖励信号逐步改进调度策略。附录B提供了RL的简单入门。</p>
+<p>Decima的RL框架(图4)是通用的，可以应用于各种系统和目标。在§5中，我们描述了在一组相同的executor上调度DAG的设计，以最小化平均JCT。我们在§7的结果将展示如何应用相同的设计来调度多个资源（例如，CPU和内存），优化其他目标，如makespan[65]，并学习取决于底层系统的质量上不同的策略（例如，在不同的机器之间移动作业的开销）</p>
+<p><strong>挑战：Decima的设计解决了三个关键挑战:</strong></p>
+<ol>
+<li><strong>可伸缩的状态信息处理。</strong>调度程序必须考虑大量的动态信息来做出调度决策：数百个作业的DAG，每个DAG有几十个阶段，以及每个executor可能处于不同的状态(例如，分配给不同的作业)。通过神经网络处理所有这些信息是具有挑战性的，特别是因为神经网络通常需要固定大小的向量作为输入。</li>
+<li><strong>调度决策的巨大空间。</strong>调度器必须潜在地将数千个可运行阶段映射到可用的executor。指数级的映射空间对RL算法构成了挑战，它必须在训练中“探索”动作空间，以学习一个好的策略。</li>
+<li><strong>为连续的随机到来的job提供训练。</strong>训练调度器处理随时间推移而随机到达的连续工作的调度器是非常重要的，因为RL算法通常需要在有限的时间范围内进行“epsiode”训练。此外，我们发现，工作到达过程中的随机性，由于它增加了报酬的方差和噪声，造成了RL训练的困难。</li>
+</ol>
+<h1 id="五、设计"><a href="#五、设计" class="headerlink" title="五、设计"></a>五、设计</h1><p>本节介绍了Decima的设计，根据它如何解决上述三个挑战来构建：可伸缩的状态信息处理(§5.1)，将调度决策高效编码为行动(§5.2)，以及连续随机工作到达的RL训练(§5.3)。</p>
+<h2 id="5-1-可伸缩的状态信息处理"><a href="#5-1-可伸缩的状态信息处理" class="headerlink" title="5.1 可伸缩的状态信息处理"></a>5.1 可伸缩的状态信息处理</h2><p>在每个状态观察中，Decima必须将状态信息（作业DAG和executor状态）转换为特性，然后传递给它的策略网络。</p>
+<p>一种选择是创建一个包含所有状态信息的平面特征向量。然而，这种方法不能扩展到任意数量、任意大小和形状的DAG。此外，即使工作和阶段的数量受到严格限制，处理高维特征向量也需要一个庞大的策略网络，这将是很难训练的。</p>
+<p>Decima通过图神经网络实现可伸缩性，图神经网络将状态信息（例如，作业阶段的属性，DAG依赖结构等）编码或“嵌入”在一组嵌入向量中。我们的方法基于图卷积神经网络[12,23,46]，但是为调度定制。表1定义了我们的符号。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/222.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/222.png"></p>
+<p>图嵌入将带有一组阶段属性（如剩余任务数、预期任务持续时间等）的节点的作业DAG作为输入，输出三种不同类型的嵌入:</p>
+<ol>
+<li>每节点嵌入，它捕获关于节点及其子节点的信息(包含，例如，从节点开始的关键路径上的聚合工作);</li>
+<li>每job的嵌入，它在整个job DAG中聚合信息(包含，例如，job中的总工作)；</li>
+<li>一种全局嵌入，它将每个作业的所有嵌入信息组合成一个集群级的摘要(包含，例如，作业数量和集群负载)。</li>
+</ol>
+<p>重要的是，在这些嵌入中存储什么信息并不是硬编码的——Decima会自动学习什么是统计上的重要信息，以及如何通过端到端训练从输入的DAG中计算出这些信息。</p>
+<p>换句话说，嵌入可以被认为是特征向量，图形神经网络学习计算无需人工特征工程。</p>
+<p>Decima的图神经网络是可扩展的，因为它重用了一组通用的操作作为构建块来计算上述嵌入。这些构建模块本身被实现为小的神经网络，在相对低维的输入向量上运行。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/7.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/7.png"></p>
+<p>图神经网络将每个DAG节点的原始信息转换为向量表示。这个示例显示了本地消息传递的两个步骤和两个级别的摘要。</p>
+<p><strong>每节点嵌入</strong></p>
+<p>给定对应于DAG $G_i$中节点的属性阶段向量$x^i_v$，Decima构建每个节点的嵌入$（G_i,x^i_v)→e^i_v$。e向量捕获了从v可以到达的所有节点（例如，v的子节点，它们的子节点，等等）的信息。为了计算这些向量，从DAG的叶子开始(图5a)，Decima以一系列消息传递步骤将信息从子节点传播到父节点。在每个消息传递步骤中，节点v的子节点聚合了所有子节点的消息(图5a示例中的阴影节点)，计算自己的嵌入为:</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/3.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/3.png"></p>
+<p>其中f(·)和g(·)为向量输入的非线性变换，实现为(小)神经网络，ξ(v)为节点v的子集合。</p>
+<p>第一项是一个概括的、非线性的聚合运算，它总结了v的子元素的嵌入，将后一个摘要项添加到v的特征向量（ $x_v$）得到了v的嵌入。Decima在所有节点和所有消息传递步骤中重用相同的非线性转换f(·)和g(·)。</p>
+<p>大多数现有的图神经网络架构[23,24,46]使用$e_v=∑_{u∈ξ(v)}f(e_u)$形式的聚合操作来计算节点嵌入。然而，我们发现在Eq.(1)中添加第二个非线性转换g(.)对于学习强调度策略是至关重要的。</p>
+<p>原因是，如果没有g(·)，图神经网络就无法计算出某些用于调度的有用特征。</p>
+<p>例如，它不能计算DAG的关键路径[44]，这需要在消息传递过程中，跨节点的子节点进行max操作。结合两个非线性变换f(·)和g(·)使Decima能够表达各种各样的聚合函数。例如，如果f和g是单位转换，则聚合就是使子节点嵌入；如果f∼log(·/n)， g∼exp(n ×·)，且n→∞，则聚合计算子节点嵌入的最大值。我们在附录E中展示了这种嵌入的实证研究。</p>
+<p>结合两个非线性变换f(·)和g(·)使Decima能够表达各种各样的聚合函数。</p>
+<p>例如，如果f和g是单位转换，则聚合就是使子节点嵌入；</p>
+<p>如果f∼log(·/n)， g∼exp(n ×·)，且n→∞，则聚合计算子节点嵌入的最大值。</p>
+<p>我们在附录E中展示了这种嵌入的实证研究。</p>
+<p><strong>每job和全局嵌入</strong></p>
+<p>图神经网络还计算每个DAG $G_i$ 的所有节点嵌入的总和。</p>
+<p>$(x^i_v,e^i_v),v∈G_i →y^i$和所有跨DAG的全局总结$(y^1,y^2,…)→z$。</p>
+<p>为了计算这些嵌入，Decima在每个DAG中添加一个summary节点，它将DAG中的所有节点作为子节点（图5b中的正方形）。这些DAG级别的summary节点依次是单个全局summary节点（图5b中的三角形）的子节点。这些summary节点的嵌入也使用公式(1)进行计算。每一级summary都有其自己的非线性转换f和g，换句话说，图神经网络总共使用了六个非线性转换，每个级别的summary都有两个。</p>
+<h2 id="5-2-将调度决策编码为操作"><a href="#5-2-将调度决策编码为操作" class="headerlink" title="5.2 将调度决策编码为操作"></a>5.2 将调度决策编码为操作</h2><p>对调度决策进行编码的关键挑战在于处理大动作空间的学习和计算复杂性。作为一种简单的方法，考虑一个解决方案，给定§5.1中的嵌入，一次性将所有executor的任务返回到作业阶段。这种方法必须从指数大的组合中选择行动；在另一个极端，考虑这样一种解决方案：每当executor可用时，调用agent来选择一个阶段。这种方法的操作空间要小得多(O(#stages))，但是它需要很长的操作序列来调度一组给定的作业。在RL中，大的动作空间和长动作序列都增加了样本的复杂性并减慢了训练速度。</p>
+<p>Decima平衡行动空间的大小和所需的操作数量分解调度决策为一系列二维操作，输出</p>
+<p>(i) 指定下一个阶段 (ii)用于该阶段工作的executor数量的上限。</p>
+<p><strong>调度事件</strong></p>
+<p>当一组可运行阶段（即父阶段已经完成且至少有一个等待任务的阶段）在任何作业DAG中发生变化时，Decima调用agent。</p>
+<p>这种调度事件发生在以下情况：</p>
+<p>(i)一个阶段的任务用完(即不再需要更多的executor)， (ii)一个阶段完成，解锁一个或多个子阶段的任务，或者(iii)一个新的job到达系统。</p>
+<p>在每个调度事件中，agent在一个或多个动作中调度一组自由executor。具体地说，它将§5.1中的嵌入向量作为输入传递到策略网络，该网络输出一个二维动作$(v,l_i)$，包括一个阶段v和v的作业i的并行度限制$l_i$。如果作业i目前拥有少于$l_i$的executor，那么Decima将executor分配给v直到该限制。如果在调度操作之后仍然有空闲的executor，那么Decima将再次调用agent来选择另一个阶段和并行度限制。这个过程会一直重复，直到分配了所有的executor，或者没有更多的可运行阶段。Decima通过强制并行性限制大于当前分配给job i的executor数量，确保这个进程在有限的步骤中完成，这样每个操作至少会调度一个新的executor。</p>
+<p><strong>阶段选择</strong></p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/8.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/8.png"></p>
+<p>图6可视化了Decima的policy网络。对于t时刻的调度事件，状态为$s_t$，policy网络以如下规则选择阶段。</p>
+<p>对于作业i的节点v，它计算了一个分数$q^i_v=q(e^i_v,y^i,z)$，其中，q(.)是一个得分函数，它将嵌入向量映射到一个标量值。和嵌入步骤相似的是，得分函数也是一个用神经网络实现的非线性变换。$q^i_v$代表调度节点v的优先级。Decima然后使用一个softmax操作，根据优先级得分计算选择节点的概率：</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/4.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/4.png"></p>
+<p>其中，j(u)是节点u的作业，$A_t$是可以在时间t被调度的节点集合。注意到RL的agent可以在每步知道$A_t$，因为输入的DAG可以准确的告知哪个阶段是可运行的。这里，$A_t$限制softmax操作所考虑的输出。整个操作都是端到端可微的。</p>
+<p><strong>并行限制选择</strong></p>
+<p>许多现有的调度器都为每个job设置了静态的并行度：例如，Spark默认将executor的数量作为job提交的命令行参数。Decima每次对job进行调度决策时都会调整该job的并行度，并在job的不同阶段变为可运行或完成执行时改变并行度。</p>
+<p>对于每个$job_i$，Decima的policy网络也为$job_i$分配并行限制$l_i$计算一个分数$w^i_l=w(y^i,z,l)$ 。和阶段选择相似的是，Decima在这些分数上应用softmax操作来计算选择并行限制的概率。</p>
+<p>重要的是，Decima对所有作业和所有并行度限值使用相同的score函数w(·)。这是可能的，因为分数函数将并行度$l_i$作为其输入之一。如果不使用$l_i$作为输入，我们就无法区分不同的并行度限制，并且必须为每个限制使用单独的函数。由于可能的限制的数量可以和executor的数量一样多，重用相同的评分函数可以显著减少策略网络中的参数数量，加快训练速度。</p>
+<p>Decima的动作指定了作业级的并行性（例如，整个作业总共有10个executor），而细粒度的stage级并行性则相反。这种设计选择以更容易训练的模型来交换控制粒度。特别是，将Decima限制为工作级并行控制减少了调度策略的空间，而调度策略必须在训练期间进行探索和优化。</p>
+<p>然而，Decima仍然保持了（间接地）控制级并行性的表达能力。在每个调度事件上，Decima选择一个阶段v和v的作业i的新的并行限制。系统然后给v调度executor，直到$l_i$的并行度达到极限。通过具有不同并行度限制的重复操作，Decima可以将所需的executor数量添加到特定的stage。例如，假设$job_i$目前有10个executor，其中4个在$stage_v$上工作。为了给v增加两个executor，在一个调度事件上，Decima选择并行度限制为12的$stage_v$。我们的实验表明，在大幅加速训练的情况下，Decima在工作级并行和细粒度、阶段级并行选择方面取得了相同的性能。</p>
+<h2 id="5-3训练"><a href="#5-3训练" class="headerlink" title="5.3训练"></a>5.3训练</h2><p>训练Decima的主要挑战是如何在连续的随机工作到达情况下进行训练。为了解释这一挑战，我们首先描述用于训练的RL算法。</p>
+<p>RL训练以episode形式进行。每个episode由多个调度事件组成，每个调度事件包括一个或多个动作。T是每episode的总动作数（T可以在不同的episode中变化），$t_k$是第k个动作的时钟时间。</p>
+<p>为了引导RL算法，Decima根据agent的高级调度目标，在每个动作之后给出agent的奖励$r_k$。例如，如果目标是最小化平均JCT，Decima在第k个动作后惩罚agent，$r_k=-(t_k-t_{k-1})J_k$，其中，$J_k$是时间间隔$[t_{k-1},t_k]$的系统作业数量。RL算法的目标是最小化系统的平均期望时间。该目标使系统中的平均作业数量最小化，因此，根据Little定律[21，第5节]，它有效地使平均JCT最小化。</p>
+<p>Decima使用策略梯度算法进行训练。</p>
+<p>策略梯度方法的主要思想是通过使用训练期间观察到的奖励对神经网络参数进行梯度下降来学习。注意所有的Decima操作，从图神经网络(§5.1)到策略网络(§5.2)，都是可微的。为简洁起见，我们将这些操作中的所有参数联合表示为θ，调度策略为$π_θ(s_t,a_t)$ ——定义为在状态$s_t$时采取行动$a_t$的概率。</p>
+<p>考虑长度为T的一个episode，其中，agent在第k步收集观察值，agent使用加强策略梯度算法更新调度策略的参数θ。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/16.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/16.png"></p>
+<p>这里，α是学习率，$b_k$是用于减少政策梯度方差的基线。基线的一个例子是“基于时间的”基线[37,53]，它设置$b_k$为从阶段k开始的累积奖励，平均于所有episode上。</p>
+<p>直觉上，$(∑<em>{k^{‘}}r</em>{k^{‘}}-b_k)$估计与平均情况相比，特定事件中(从阶段k开始)的总奖励要好(或差)多少；而$∇_θlogπ_θ(s_k,a_k)$在参数空间中提供了一个方向，增加在状态$s_k$选择行为$a_k$的概率，因此，该方程的净效果是增加选择行为导致优于平均回报的概率。</p>
+<p><strong>挑战#1：连续作业到达时训练</strong></p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9.png"></p>
+<p>为了学习一个稳健的调度策略，agent必须在训练期间经历“流”场景，即工作随着时间不断到来。</p>
+<p>使用“批处理”场景进行训练，所有的工作都在某一epsiode的开头到达，这会导致流媒体设置中的糟糕政策（例如，参见图14）。然而，不断有新工作到来的训练并非微不足道。特别是，agent的初始策略非常差（例如，初始参数是随机的）。因此，agent不能在作业到达早期训练epsiode时就尽快安排作业，几乎每一epsiode都有大量的作业排队。让agent在这些早期epsiode中探索超出几个步骤的内容会浪费训练时间，因为它遇到的超载集群场景不会在合理的策略下发生。</p>
+<p>为了避免这种浪费，我们提前终止初始epsiode，以便agent可以重置并从空闲状态快速重试。我们在整个训练过程中逐渐增加每一epsiode的长度。因此，最初，agent学习调度短序列的作业。随着它的调度策略的改进，我们增加了epsiode的长度，使得这个问题更具挑战性。在训练过程中逐步增加作业序列长度和问题复杂性的概念实现了用于集群调度的[14]课程学习。</p>
+<p>这种方法的一个微妙之处在于终止不能是确定的。否则，agent可以学习预测某个epsiode何时终止，并将某些大型作业的调度推迟到终止时间。</p>
+<p>这被证明是一个固定时间范围内的最优策略：由于agent不会因为终止时剩余的工作而受到惩罚，所以最好是严格安排短的工作，即使这意味着要饿死一些大的工作。我们发现这种行为导致某些作业在运行时无限期饥饿（作业无限期地到达）。为了防止这种行为，我们使用了一个无记忆的终止过程。具体地说，我们在时间τ(从指数分布中随机抽取)之后终止每个训练epsiode。如上所述，训练期间的平均时长会增加到一个很大的值(例如，平均会有几百个工作到来)。</p>
+<p><strong>挑战#2：随机工作到达引起的方差</strong></p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/17.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/17.png"></p>
+<p>其次，为了使策略在流媒体环境中很好地普遍化，训练epsiode必须包括许多不同的工作到达模式。这就产生了一个新的挑战：不同的工作模式会对绩效产生很大的影响，从而导致截然不同的奖励。例如，考虑图7中所示的时间调度操作。如果这个动作之后的到达序列由大量的作业组成（例如作业序列1），作业队列将会变大，agent将会招致大量的惩罚。另一方面，轻量的作业流会导致排队时间短，惩罚少。问题是，这种奖励上的差异与当时的行为无关——它是由作业到达过程中的随机性造成的。由于RL算法使用奖励来评估动作的好坏，这样的方差增加了噪声，阻碍了有效的训练。</p>
+<p>为了解决这个问题，我们基于最近提出的”输入驱动”环境[55]的方差减少技术，其中外生的随机输入过程（例如：Decima的工作到达过程）影响系统的动态。其主要思想是在多个训练epsiode中确定相同的工作到达顺序，并为每个到达顺序计算单独的基线。特别地，我们不是通过对不同到达序列的epsiode平均来计算基线$b_k$，而是只平均具有相同到达序列的epsiode。在训练期间，我们对大量随机抽样的工作到达序列重复这个过程。这种方法完全消除了由作业到达过程引起的差异，使策略梯度算法能够更准确地评估不同行动的有效性(参见图14)。关于我们训练的实现细节和使用的超参数设置，请参见附录C。</p>
+<h1 id="六、实施"><a href="#六、实施" class="headerlink" title="六、实施"></a>六、实施</h1><p>我们已经将Decima实现为一个可插拔的调度服务，并行数据处理平台可以通过RPC接口与之通信。在§6.1中，我们描述了与Spark集成的Decima。接下来，我们将描述我们基于python的训练基础设施，其中包括一个精确的Spark集群模拟器。</p>
+<h2 id="6-1-Spark集成"><a href="#6-1-Spark集成" class="headerlink" title="6.1 Spark集成"></a>6.1 Spark集成</h2><p>一个Spark集群运行多个并行应用程序，这些并行应用程序包含一个或多个作业，这些作业共同构成一个处理阶段的DAG。Spark master管理应用程序的执行，并监控多个worker的运行状况，每个worker在多个executor之间分配资源。executor是为特定的应用程序创建的，并保持与该应用程序的关联，该应用程序处理自己对executor的工作调度。一旦应用程序完成，它的executor就会终止。图8说明了这个体系结构。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/10.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/10.png"></p>
+<p>为了将Decima整合到Spark中，我们做了两个主要改变：</p>
+<ol>
+<li>每个应用程序的DAG调度器在启动和调度事件发生时联系Decima。Decima将响应下一个阶段的工作和并行性限制(§5.2)。</li>
+<li>Spark master在新任务到来时与Decima联系，确定需要启动多少executor，并在其完成一个阶段后将其从任务中带走，以此帮助Decima。</li>
+</ol>
+<p><strong>状态观察</strong></p>
+<p>在Decima，一个作业的$DAG_i$的节点v的特征向量$x^i_v$包括：(i)阶段剩余的任务数量 (ii)平均任务时间 (iii)节点上当前工作的executor数量 (iv)可用executor的数量,(v)可用executor是否对作业是本地的。</p>
+<p>我们通过包含捕获集群状态所需的信息（例如，当前分配给每个阶段的executor的数量）来选择这些特性，以及可能对调度决定有所帮助的统计数据。这些统计数据依赖于可用的信息（例如，同一任务过去执行的概要文件，或运行时指标）和所使用的系统（这里是Spark）。Decima可以很容易地吸收额外的信号。</p>
+<p><strong>神经网络架构</strong></p>
+<p>图神经网络的六个变换函数f(·)和g(·)(节点级、作业级和全局嵌入各两个)和策略网络的两个得分函数q(·)和w(·)(§5.2)使用双隐层神经网络实现，每层分别有32和16个隐单元。由于这些神经网络可用于所有作业和所有并行性限制，因此Decima的模型是轻量级的——它总共包含12736个参数(50KB)。将集群状态映射到调度决策只需要不到15ms(图15b)。</p>
+<h2 id="6-2-Spark仿真器"><a href="#6-2-Spark仿真器" class="headerlink" title="6.2 Spark仿真器"></a>6.2 Spark仿真器</h2><p>Decima的训练是通过一个忠实的模拟器离线进行的，该模拟器可以访问真实Spark集群(§7.2)的分析信息(例如，任务持续时间)和工业跟踪(§7.3)的作业运行时特征。为了忠实地模拟Decima的决策如何与集群交互，我们的模拟器捕捉了几个现实世界的效果：</p>
+<ol>
+<li>特定阶段的第一波任务通常比随后的任务运行得慢。这是由于Spark的流水线任务执行[63]，JIT编译任务代码[47]，以及预热成本（例如，与其他执行器建立TCP连接）。因此，Decima的模拟环境从不同的分布中挑选出第一波任务的实际运行时间。</li>
+<li>在Spark作业中添加executor需要启动JVM进程，耗时2-3秒。为了隔离，executor被绑定到一个作业上，因为Spark认为executor是长期存在的。因此，Decima的环境规定了空闲时间，这反映了每次Decima在作业之间移动一个executor时的启动延迟。</li>
+<li>高度的并行性会降低单个Spark任务的速度，因为更广泛的shuffle需要额外的TCP连接，并在合并多个分片数据时产生更多的工作。如果有可用的数据，那么Decima的环境通过从不同并行级别收集的分布中采样任务持续时间来捕捉这些影响。</li>
+</ol>
+<p>在附录d中，我们通过将模拟器与真实的Spark执行进行比较来验证模拟器的逼真度。</p>
+<h1 id="7-评估"><a href="#7-评估" class="headerlink" title="7 评估"></a>7 评估</h1><p>我们在一个真实的Spark集群测试床上评估了Decima，并在阿里巴巴生产负载的模拟中进行了评估。我们的实验解决了以下问题:</p>
+<ol>
+<li>在真正的Spark集群中，与仔细调优的启发式算法相比，Decima的性能如何(§7.2)?</li>
+<li>Decima的学习能否推广到具有不同机器配置的多资源设置(§7.3)?</li>
+<li>我们的每个关键想法对Decima的业绩有何贡献；当调度环境发生变化时，Decima如何适应；Decima训练和训练结束后做调度决定的速度有多快?</li>
+</ol>
+<h2 id="7-1-存在的基准算法"><a href="#7-1-存在的基准算法" class="headerlink" title="7.1 存在的基准算法"></a>7.1 存在的基准算法</h2><p>在我们的评估中，我们将Decima的性能与7种基准算法进行比较：</p>
+<ol>
+<li>Spark默认的FIFO调度，即按照作业到达的顺序运行作业，并根据用户的请求为每个作业分配多少executor。</li>
+<li>最短作业优先关键路径启发式算法(SJF-CP)，该算法根据作业的总工作量对作业进行优先排序，并在每个作业的关键路径上运行下一阶段的任务。</li>
+<li>简单的公平调度(Simple fair scheduling)，它为每个job公平地分配executor，并从可运行阶段循环执行任务，并发地耗尽所有分支。</li>
+<li>朴素加权公平调度(Naive weighted fair scheduling)，是将executor分配到与其总工作量成比例的作业中。</li>
+<li>一个仔细调整的加权公平调度，给每个作业$T^\alpha_i/∑_iT^\alpha_i$个executor，其中，$T_i$是每个作业i的总工作，α是一个优化因素。注意，α = 0简化为简单公平方案，α =1简化为朴素加权公平方案。我们扫描α∈{−2，−1.9，…，2}为最优因子。</li>
+<li>Tetris[34]标准的多资源打包算法，它贪婪地调度请求资源向量与可用资源向量点积最大的阶段。</li>
+<li>Graphene*，用于Decima离散执行器类的Graphene[36]的改编。“Graphene∗”使用Graphene的算法检测“有问题”的节点并对其进行分组[36，§4.1]，并按照(5)中优化的并行度对其进行调度，从而实现Graphene规划策略的精髓。我们执行网格搜索来优化超参数(详细信息见附录F)。</li>
+</ol>
+<h2 id="7-2-Spark集群"><a href="#7-2-Spark集群" class="headerlink" title="7.2 Spark集群"></a>7.2 Spark集群</h2><p>我们使用在Spark v2.2上运行的OpenStack集群，如§6.1所述修改，在Chamelon云试验台中。集群包含25个虚拟机，在m1.xlarge的实例上（8CPU，16GB RAM）运行两个executor，在m1.xxxlarge的实例上（16CPU，32GB RAM）运行两个executor。我们的实验考虑到了：i)分批到达，即多个作业同时开始并一直运行到完成；(ii)连续到达，即作业以随机的到达时间分布或跟踪到达。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/11.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/11.png"></p>
+<p>第二，可能令人惊讶的是，不加权的公平调度优于按工作规模加权的公平调度(“天真加权公平”)。这是因为加权公平调度分配给小任务的执行数少于它们所分配的执行数，从而降低了它们的运行速度，提高了平均JCT。我们调整的加权公平启发式通过在每个实验中校准每个任务的权重来抵消这种影响(7.1节)。最优α值通常在−1左右，即启发式设置的executor数量与作业规模成反比。这一政策有效地集中在早期的小工作，然后转向并行运行大工作；它比公平调度高出11%。</p>
+<p>最后，Decima优于所有基线算法，并比最接近的启发式算法提高了平均21%的JCT。这是因为Decima能更好地对工作进行优先排序，将高效的executor分配给不同的工作，并利用了作业DAG结构(§7.4分解了这些因素的好处)。Decima通过端到端RL训练自动学习该策略，而性能最佳的基线算法需要仔细调优。</p>
+<p><strong>分批到达</strong></p>
+<p>我们从六种不同的输入大小(2、5、10、20、50和100 GB)和所有22个TPC-H[73]查询中随机抽样作业，产生重尾分布：23%的作业包含总作业的82%。20个随机工作的组合(在训练中看不到)作为一批到达，我们测量他们的平均JCT。</p>
+<p>图9a显示了100次实验中平均JCT的累积分布。从结果中可以看出三个关键问题。首先，SJF-CP和fair scheduling虽然简单，但平均比FIFO策略的性能高出1.6倍和2.5倍。重要的是，公平调度策略的性能优于SJF-CP，因为它处理多个作业，而SJF-CP将所有执行器都集中在最短的作业上。</p>
+<p><strong>连续到达</strong></p>
+<p>我们随机抽样了6个不同尺寸的1000个TPC-H作业，并将它们的到达建模为平均到达间隔时间为45秒的泊松过程。由此产生的集群负载约为85%。在这种集群负载下，作业到达的速度比大多数基于启发式调度策略完成作业的速度要快。</p>
+<p>图9b展示了Decima的性能优于唯一能够跟上的基线算法；Decima的平均JCT要低29%。特别对于Decima在繁忙、高负载的时期，此时调度决策的影响要比集群资源充足时大得多。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/12.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/12.png"></p>
+<p>图10a显示，Decima保持的并发任务数比调整后的启发式更低，特别是在繁忙的7-9小时。</p>
+<p>其中Decima完成任务的速度约为2倍(图10b)。</p>
+<p>对于批处理集群来说，高负载下的性能很重要，因为它们通常有很长的作业队列，而在高负载时期，好的调度决策具有最大的影响(例如，减少工作负载峰值所需的过度供应)。</p>
+<p>Decima的性能提升来自于更快地完成小任务，如图10c左下角的红点所示。Decima通过分配更多的executor来实现这一点(图10d)。每个任务的正确executor数量取决于工作负载：不加区分地给小任务分配更多executor会降低集群资源的使用效率(§2.2)。</p>
+<p>例如，SJF-CP严格地将所有可用的executor分配给最小的job，但是这种对executor的低效使用增加了总工作量，因此SJF-CP积累了越来越多的job积压。</p>
+<p>Decima的executor分配，相比之下，结果与手动调整启发式的总工作量相似。</p>
+<p>图10显示了这一点：对角线下面的作业使用Decima比启发式的总工作量小，上面的作业使用Decima的总工作量大。大多数小的任务都在对角线上，这表明当额外的executor仍然有效时，Decima只会增加并行度限制。因此，Decima成功地平衡了给小任务额外的资源以更快地完成它们和有效地使用资源之间的关系。</p>
+<h2 id="7-3-多维资源包装"><a href="#7-3-多维资源包装" class="headerlink" title="7.3 多维资源包装"></a>7.3 多维资源包装</h2><p>我们前面实验中使用的独立Spark调度器只提供访问预定义executor插槽的作业。更高级的集群调度程序，如YARN[75]或Mesos[41]，允许作业指定其任务的资源需求，并创建适当大小的executor。将具有多维资源需求的任务打包到固定容量的服务器上(例如，CPU、内存⟩)，进一步增加了调度问题的复杂性[34,36]。我们使用阿里巴巴的生产轨迹来研究Decima是否可以学习到具有相同核心方法的良好多维调度策略。</p>
+<p><strong>工业跟踪</strong></p>
+<p>跟踪包含来自生产集群的大约20,000个作业。许多作业都有复杂的DAG: 59%的作业有四个或更多的DAG阶段，有些作业有数百个DAG阶段。我们使用模拟器(§6.2)与多达30,000个executor进行实验。该参数根据跟踪中并发任务的最大数量设置。我们使用跟踪的前半部分进行训练，然后在其余部分将Decima的性能与其他方案进行比较。</p>
+<p><strong>多资源环境</strong></p>
+<p>我们修改了Decima的环境，以提供几个具有不同内存大小的离散executor类。任务现在需要最少的CPU和内存，也就是说，任务必须适合运行它的executor。任务可以在大于或等于其资源请求的executor中运行。Decima现在选择要调度的DAG阶段、并行级别和要使用的executor类。我们的实验使用了四种executor类型，每一种都有一个cpu内核和(0.25,0.5,0.75,1)单位的规范化内存；每个executor类占集群执行器总数的25%。</p>
+<p><strong>结果</strong></p>
+<p>我们根据跟踪对连续的作业到达进行模拟的多资源实验。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/13.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/13.png"></p>
+<p>图11a显示了Decima和其他三种算法的结果：优化后的加权公平启发法、Tetris和Graphene∗。</p>
+<p>与最佳竞争算法（Graphene∗)相比，Decima的平均JCT降低了32%，表明它能在多资源环境中学习到良好的策略。</p>
+<p>我们也在TPC-H工作负载上重复这个实验，使用200个executor，从(0,1)中采样每个TPC-H DAG节点的内存请求。图11b显示，Decima比竞争算法的性能要好得多(例如，比Graphene∗高出43%)。这是因为工业缺乏针对不同并行级别的工作膨胀度量，而我们为TPC-H提供了这种度量。Decima学会使用这些信息进一步校准执行任务。</p>
+<p>Decima的策略与Graphene有本质上的不同。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/444.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/444.png"></p>
+<p>图12a通过作业的总工作来分析Decima对Graphene∗的改进。</p>
+<p>对于所有大小的工作，Decima完成工作的速度都比Graphene∗快，但对于小的工作，它的收益尤其大。原因是，当Decima可以帮助完成即将完成的小任务，而合适大小的executor数量又不够时，就会学习使用“超大”executor。</p>
+<p>图12b说明了这一点：在总工作量只有20%的作业上，Decima在最大的类上多使用了39%的execuutors(完整配置见附录G)。换句话说，Decima在内存碎片和更快地清理作业队列之间进行了权衡。这种权衡是有意义的，因为小的工作 (i)对平均JCT目标贡献更多，(ii)在短时间内只能分割资源。相比之下，Tetris会贪婪地将任务打包到最合适的executor类中，并实现最低的内存碎片。Decima的碎片化程度只有Tetris的4% - 13%，但它的平均JCT比Tetris低52%，因为它学会了平衡。这需要考虑与工作负载相关的因素，例如DAG结构、“小”作业的阈值等。像Graphene∗这样的启发式方法试图通过附加评分函数和广泛调整来平衡这些因素，而Decima则在没有这些输入的情况下学习这些因素。</p>
+<h2 id="7-4-Decima深度潜水"><a href="#7-4-Decima深度潜水" class="headerlink" title="7.4 Decima深度潜水"></a>7.4 Decima深度潜水</h2><p>最后，我们演示了Decima可以学习的广泛的调度策略，并分解了我们的关键思想和技术对Decima性能的影响。在附录中，我们进一步评估了Decima的最优性，方法是通过对工作顺序的穷尽搜索(附录H)、其学习策略对变化环境的鲁棒性(附录I)和Decima对不完整信息的敏感性(附录J)。</p>
+<p><strong>学习策略</strong></p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/14.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/14.png"></p>
+<p>Decima优于其他算法，因为它可以根据高级目标、工作量和环境条件学习不同的策略。</p>
+<p>当Decima优化平均JCT(图13a)时，它会学习在小任务中共享executor，以快速完成它们，避免在大任务中使用过多executor的低效(§7.2)。Decima还让executor继续执行同一个任务，以避免移动executor带来的开销(§6.1)。然而，如果在作业之间移动executor是自由的(长时间任务或没有JVM spawn开销的系统都是这样)，那么Decima就会学习到一个策略，它会在作业之间快速移动executor(参见图13b中频繁的颜色变化)。最后，给出了一个不同的目标，即最小化一批作业的总完工时间，Decima学习了另一个不同的策略(图13c)。由于对于极小化目标来说，只有最终作业的完成时间才重要，因此Decima不再能够提前完成作业。相反，许多作业在批处理工作负载结束时一起完成，这使调度器在整个执行过程中有更多的作业选择，从而提高了集群利用率。</p>
+<p><strong>学习架构的影响</strong></p>
+<p>我们验证了Decima使用了状态提供的所有原始信息，并通过选择性地省略组件来要求所有关键设计组件。在不同负载下，我们在模拟集群上运行1000个连续的TPC-H作业，并在每个负载上训练五种不同的Decima变体。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9%201.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/9%201.png"></p>
+<p>分解每个关键想法对Decima的贡献与持续的工作到来。忽略任何概念都会使Decima的平均JCT高于加权公平政策。</p>
+<p>图14显示，在高集群负载下，从Decima中删除任何一个组件所产生的平均JCTs比调优的加权公平启发式方法要差。从这个结果可以得出四个结论。首先，并行控制对Decima的性能影响最大。在没有并行控制的情况下，Decima在每个调度事件中将所有可用的executor分配到单个阶段。</p>
+<p>即使在中等集群负载(例如55%)下，这也会导致不稳定的策略，无法跟上传入作业的到达率。其次，省略了图嵌入(即直接将每个节点上的原始特征作为§5.2中的得分函数的输入)，使得Decima无法估计作业中的剩余工作，也无法计算集群中的其他作业。因此，Decima没有小作业或集群负载的概念，而且随着负载的增加，它学习到的策略很快就会变得不稳定。第三，在训练片断中使用不固定的工作序列增加了奖励信号的差异(§5.3)。随着负荷的增加，工作到达顺序变得更加多样化，这增加了奖励的差异。</p>
+<p>在集群负载大于75%的情况下，通过同步终止降低方差可以使训练Decima时的平均JCT提高2倍，说明在长时间调度问题中，方差降低是学习高质量策略的关键。</p>
+<p>第四，仅针对批量作业的训练不能推广为连续作业。当接受成批到达的训练时，Decima学会了系统地推迟大的工作，因为这导致了JCT的最低总和。对于连续的作业到达，随着集群负载的增加和作业更频繁地到达，该策略无限期地耗尽大量作业。因此，当对批量作业进行训练时，当载荷超过65%时，Decima的优化加权公平启发式性能较差。</p>
+<p><strong>通用化到不同的工作负载</strong></p>
+<p>在TPC-H实验中，我们通过改变训练工作量来测试Decima的泛化能力(§7.2)。为了在集群工作负载中模拟转换，我们针对42秒到75秒之间的不同作业到达间隔时间训练模型，并使用45秒到达间隔时间的工作负载对它们进行测试。随着Decima学习特定于工作负荷的策略，我们预计其有效性取决于广泛的测试工作量特征，如到达时间和工作规模分布，是否与训练工作量匹配。</p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/333.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/333.png"></p>
+<p>Decima适用于不断变化的工作负载。对于看不见的工作负载，使用混合工作负载训练时，Decima的性能比最佳启发式算法高出10%;如果它从输入特征中知道到达间隔时间，则是16%</p>
+<p>表2展示了平均JCT。Decima当在类似于测试工作负载的工作负载下训练时表现得很好。不出意料的是，当Decima采用“反倾斜”的工作负载(75秒的到达间隔时间)时，它的总体性能很差，而且不如优化的加权公平策略。这是讲得通的，因为Decima将学习到的到达间时间分布合并到策略中。</p>
+<p>当使用覆盖整个到达间隔时间范围的混合工作负载集进行训练时，Decima可以学习到更一般的策略。这个策略不太适合特定的到达间时间分布，因此对工作负载变化更稳健。如果Decima可以观察到间隔到达时间作为其状态的一个特征(§6.1)，它仍然可以更好地概括和学习适应性策略，达到比最佳启发式低16%的平均JCT。这些结果突出表明，多样化的训练工作量集有助于使Decima的学习策略对工作量转移具有鲁棒性；我们在§8中讨论在线学习的可能性。</p>
+<p><strong>训练和推理性能</strong></p>
+<p><img src="/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/15.png" alt="Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/15.png"></p>
+<p>图15显示了在连续的TPC-H工作到达上的Decima的学习曲线(蓝色)(§7.2)，在(看不见的)工作到达序列上每100次迭代测试模型的快照。每次训练迭代大约需要5秒。Decima的设计(§5.3)对训练效率至关重要：省略了输入(黄色曲线)的并行度极限值，迫使Decima针对不同的极限值使用单独的评分函数，显著增加了需要优化的参数数量；将细粒度的并行控制放在节点上(绿色曲线)会降低训练速度，因为这会增加Decima必须探索的算法空间。</p>
+<p>图15b显示了在我们的Spark测试床中(§7.2)，Decima决定调度操作(红色)和调度事件(蓝色)之间的时间间隔的累积分布。Decima的平均调度延迟小于15毫秒，而调度事件之间的间隔通常以秒为单位。在不到5%的情况下，调度间隔小于调度延迟(例如，当集群在单个调度事件中请求多个调度操作时)。因此，Decima的调度延迟对任务运行时没有造成可测量的开销。</p>
+<h1 id="八-讨论"><a href="#八-讨论" class="headerlink" title="八 讨论"></a>八 讨论</h1><p>在本节中，我们将讨论未来的研究方向和其他潜在的应用。</p>
+<p><strong>鲁棒性和泛化</strong></p>
+<p>我们在§7.4中的实验表明，Decima可以学习可泛化的调度策略，在不可见的工作负载下很好地工作。然而，工作负载的变化可能比到达间时间的变化更剧烈。为了提高调度策略对此类变化的鲁棒性，利用新兴的鲁棒性对抗RL文献[64]，训练agent在最坏情况下或对抗工作量可能是有帮助的。另一个方向是在工作负载发生变化时在线调整调度策略。在线方法的关键挑战是，当工作负载快速变化时，如何减少无模型RL的大样本复杂性。一种可行的方法可能是使用元学习[22,27,29]，它允许训练一个“元”调度代理，它被设计成只需要少量观察就能适应特定的工作量。</p>
+<p><strong>其它学习目标</strong></p>
+<p>在我们的实验中，我们评估了Decima与工作持续时间相关的指标(例如，平均JCT，最大完工时间)。以不同的方式塑造奖励信号也可以引导Decima实现其他目标。例如，如果错过了工作的截止日期，就对其进行严厉惩罚，这将引导Decima采取一种注意截止日期的政策。或者，基于奖励，例如，经验工作持续时间样本的第90百分位，Decima可以优化JCT分布的紧尾。使用RL将目标定义为约束优化(例如，最小化平均JCT，但严格保证公平性)是一个有趣的进一步方向[2,30]。</p>
+<p><strong>抢占式调度</strong></p>
+<p>Decima目前不会抢占正在运行的任务，只能在一个阶段完成后从作业中删除executor。这种设计选择使MDP易于处理的RL和结果有效的学习和强大的调度政策。然而，未来的工作可能会研究在rl驱动的调度程序(如Decima)中更细粒度的响应性抢占。直接引入抢占将导致更大的操作空间(例如，指定任意一组executor来抢占)，并可能需要更高的决策频率。为了使RL问题易于处理，一个潜在的研究方向是利用多智能体RL[38,50,62]。例如，一个类似于decema的调度代理可以控制下一个阶段运行以及分配多少executor，同时，另一个代理可以决定在哪里抢占executor。</p>
+<p><strong>潜在的网络和系统应用</strong></p>
+<p>我们为Decima开发的一些技术可广泛应用于其他网络和计算机系统问题。例如，输入dag的可扩展表示(§5.1)在图形问题上有应用，如数据库查询优化[56]和硬件设备放置[3]。我们的方差减少技术(§5.3)通常适用于具有随机、不可预测输入的系统[54,55]。</p>
+<h1 id="九、相关工作"><a href="#九、相关工作" class="headerlink" title="九、相关工作"></a>九、相关工作</h1><p>将机器学习技术应用于集群调度的前期工作很少。deepprm[53]使用RL训练神经网络进行多维资源打包，在目标和方法上最接近于Decima。然而，DeepRM只处理基本设置，其中每个作业都是单个任务，并在简单的模拟环境中进行评估。DeepRM的学习模型也缺乏对DAG-structured job的支持，而且它的培训程序不能处理连续的job到达的现实集群工作负载。在其他应用中，Mirhoseini等人在TensorFlow (TF)计算[60]中放置学习设备的工作也使用了RL，但依赖于递归神经网络扫描所有节点以进行状态嵌入，而不是图神经网络。他们的方法使用递归神经网络扫描所有节点的状态嵌入，而不是使用可扩展的图神经网络。该模型的目标是很好地调度单个TF作业，并且不能推广到看不见的作业组合[59]。</p>
+<p>在机器学习和算法设计方面，之前的工作将RL和图神经网络结合起来，对复杂的组合问题进行优化，如顶点集覆盖和旅行商问题[23,49]。Decima的可伸缩状态表示的设计灵感来自于这一工作，但我们发现，现成的图神经网络在解决我们的问题时表现不佳。为了训练强调度代理，我们必须改变图神经网络架构，使Decima能够计算DAG的关键路径(§5.1)。</p>
+<p>对于更广泛的资源管理系统，Paragon[25]和Quasar[26]使用协同过滤，将工作负载匹配到不同机器类型，避免干扰;他们的目标是与德西玛互补。与Decima一样，Tetrisched[74]也会提前计划，但会使用一个约束求解器来优化工作安排，并要求用户为他们的工作提供显式的约束。firament[33]也使用了一个约束求解器并实现高质量的放置，但需要管理员配置一个复杂的调度策略。石墨烯[36]使用启发式调度作业dag，但不能设置适当的并行级别。一些系统“自动扩展”并行级别以满足作业截止日期[28]或利用空闲资源机会主义地加速作业[68，§5]。Carbyne[35]允许各岗位“无私地”放弃一些短期的集群资源公平份额，以改善岗位间的JCT，同时保证长期的公平。Decima学习类似Carbyne的政策，平衡资源共享和低平均JCT的打包，但目前的Decima设计没有公平目标。</p>
+<p>像Borg [77]， Mesos[41]，或者Y ARN[75]这样的通用集群管理器支持许多不同的应用程序，使得特定于工作负载的调度策略在这个级别上很难应用。然而，Decima可以作为Mesos或Omega的框架运行[68]。</p>
+<h1 id="十-结论"><a href="#十-结论" class="headerlink" title="十 结论"></a>十 结论</h1><p>Decima证明了利用强化学习自动学习复杂集群调度策略是可行的，并且学习到的策略是灵活和高效的。Decima的学习创新，例如它的图嵌入技术和流的训练框架，可能适用于其他处理DAG的系统(例如查询优化器)。我们将开源Decima、我们的模型和实验性的基础设施，网址是://web.mit.edu/decima。这项工作不会引发任何道德问题。</p>
+<p><a target="_blank" rel="noopener" href="https://www.notion.so/84153ce5f0094fee84c908cb97f43149">理解</a></p>
 
       
 
@@ -266,7 +528,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/10/06/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/11/Learning%20Scheduling%20Algorithms%20for%20Data%20Processing%2034426c5f1a7e451393665f506b7178a7/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -280,15 +542,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/10/06/docker/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          docker
-        
-      </div>
-    </a>
   
+    <a href="/2020/10/06/docker/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">docker</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
